@@ -1,0 +1,53 @@
+# NLP Support System - Phase 2 Evaluation Report
+
+## Simple RNN Model Performance (Baseline Sequence)
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00      1425
+           1       0.00      0.00      0.00       352
+           2       0.38      0.00      0.01      2183
+           3       0.28      1.00      0.44      2724
+           4       0.00      0.00      0.00       424
+           5       0.00      0.00      0.00      1412
+           6       0.00      0.00      0.00       493
+           7       0.00      0.00      0.00       555
+
+    accuracy                           0.28      9568
+   macro avg       0.08      0.13      0.06      9568
+weighted avg       0.17      0.28      0.13      9568
+
+
+--------------------------------------------------
+
+## LSTM Model Performance (Advanced Sequence)
+              precision    recall  f1-score   support
+
+           0       0.93      0.89      0.91      1425
+           1       0.84      0.71      0.77       352
+           2       0.82      0.89      0.86      2183
+           3       0.83      0.84      0.83      2724
+           4       0.90      0.83      0.86       424
+           5       0.81      0.80      0.81      1412
+           6       0.96      0.88      0.92       493
+           7       0.92      0.86      0.89       555
+
+    accuracy                           0.85      9568
+   macro avg       0.87      0.84      0.85      9568
+weighted avg       0.85      0.85      0.85      9568
+
+
+--------------------------------------------------
+
+### Sequence Modeling vs. Fixed-Vector Representations
+Traditional models from Phase 1 (TF-IDF) treat documents as "bags of words," entirely discarding the sequential order and syntactic structure of the text. Word2Vec embeddings capture semantic meaning but, when averaged, still lose the order. Sequence models (RNNs/LSTMs) process text token-by-token, allowing them to understand context driven by word order (e.g., "system is down" vs "down the system").
+
+### Simple RNN Limitations (The Vanishing Gradient)
+While the Simple RNN processes sequences, it struggles with long support tickets. During backpropagation through time (BPTT), gradients are repeatedly multiplied by the weight matrix. If weights are small, the gradients shrink exponentially (vanish), causing the network to "forget" the beginning of a long ticket by the time it reaches the end.
+
+### LSTM Gate Mechanisms and Long-Term Dependencies
+The LSTM architecture resolves this by introducing a cell state (the "memory") regulated by three distinct gates:
+1. Forget Gate: Determines which information from the previous cell state should be discarded.
+2. Input Gate: Decides which new information from the current token should be stored in the cell state.
+3. Output Gate: Controls what parts of the updated cell state are passed on to the next hidden state.
+These mechanisms allow the LSTM to maintain uninterrupted gradient flow over long sequences, successfully linking symptoms described at the start of a ticket with technical details at the end.
+

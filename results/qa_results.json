@@ -1,0 +1,52 @@
+[
+    {
+        "ticket_id": 1,
+        "question": "What is the primary technical component or hardware mentioned?",
+        "answer_extracted": "setup",
+        "confidence_score": 0.5552,
+        "start_char": 38,
+        "end_char": 43,
+        "context_length": 111,
+        "context": "connection with icon icon dear please setup icon per icon engineers please let other details needed thanks lead"
+    },
+    {
+        "ticket_id": 2,
+        "question": "What is the primary technical component or hardware mentioned?",
+        "answer_extracted": "work experience",
+        "confidence_score": 0.1929,
+        "start_char": 0,
+        "end_char": 15,
+        "context_length": 124,
+        "context": "work experience user work experience user hi work experience student coming next his name much appreciate him duration thank"
+    },
+    {
+        "ticket_id": 3,
+        "question": "What is the primary technical component or hardware mentioned?",
+        "answer_extracted": "cable pc cord",
+        "confidence_score": 0.4761,
+        "start_char": 75,
+        "end_char": 88,
+        "context_length": 93,
+        "context": "requesting for meeting requesting meeting hi please help follow equipments cable pc cord plug"
+    },
+    {
+        "ticket_id": 4,
+        "question": "What is the primary technical component or hardware mentioned?",
+        "answer_extracted": "Cisco Catalyst",
+        "confidence_score": 0.1851,
+        "start_char": 1143,
+        "end_char": 1157,
+        "context_length": 1187,
+        "context": "User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. User reported an outage at 9:00 AM. Initial diagnostics showed nominal power levels. Network pings were timing out across the board. After extensive troubleshooting, we identified that the core issue was a fried Cisco Catalyst 3850 switch in the main rack."
+    },
+    {
+        "ticket_id": 5,
+        "question": "What is the primary technical component or hardware mentioned?",
+        "answer_extracted": "Western Digital 2TB NAS drive",
+        "confidence_score": 0.6571,
+        "start_char": 1276,
+        "end_char": 1305,
+        "context_length": 1306,
+        "context": "The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. The client cannot access the shared drive. We checked their Active Directory permissions and they seem fine. Their local machine was rebooted. We cleared the DNS cache. We updated the network drivers. Finally, we noticed that the primary hardware failure was a corrupted Western Digital 2TB NAS drive."
+    }
+]
